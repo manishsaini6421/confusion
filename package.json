@@ -54,5 +54,9 @@
   },
   "devDependencies": {
     "react-animation-components": "^3.0.0"
+  },
+  "engines": {
+    "node": "16.8.0",
+    "npm": "8.5.5"
   }
 }
