@@ -41,10 +41,10 @@ class Header extends Component {
   render() {
     return (
       <>
-        <Navbar dark expand="md">
+        <Navbar dark expand="md" fixed="top">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
-            <NavbarBrand className="mr-auto" href="/">
+            <NavbarBrand className="mr-auto style" href="/">
               <img
                 src="assets/images/logo.png"
                 height="30"
@@ -53,7 +53,7 @@ class Header extends Component {
               />
             </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav navbar>
+              <Nav navbar className="style">
                 <NavItem>
                   <NavLink className="nav-link" to="/home">
                     <span className="fa fa-home fa-lg"></span> Home

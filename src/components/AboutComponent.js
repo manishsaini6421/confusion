@@ -1,13 +1,33 @@
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import RenderLeader from './RenderLeader';
+import { baseUrl } from '../shared/baseUrl';
+import { Fade, Stagger } from 'react-animation-components';
+
+function RenderLeader({leader}) {
+   return (
+      <Fade in>
+         <div key={leader.id} className="col-12 mt-5">
+            <Media tag="ul" className="row">
+               <Media left className="col-12 col-md-2">
+                  <Media object src={baseUrl + leader.image} alt={leader.name} className="photo-size"/>
+               </Media>
+               <Media body className="col-12 col-md-10">
+                  <Media heading>{leader.name}</Media>
+                  <p>{leader.designation}</p>
+                  <p>{leader.description}</p>
+               </Media>
+            </Media>
+         </div>
+      </Fade>
+   );
+}
 
 function About(props) {
 
-    const leaders = props.leaders.map((leader) => {
+    const leaders = props.leaders.leaders.map((leader) => {
         return (
-            <RenderLeader leader={leader}/>
+            <RenderLeader leader={leader} />
         );
     });
 
@@ -63,16 +83,18 @@ function About(props) {
             </div>
             <div className="row row-content">
                 <div className="col-12">
-                    <h2>Corporate Leadership</h2>
+                   <h2>Corporate Leadership</h2>
                 </div>
                 <div className="col-12">
-                    <Media>
+                   <Media list>
+                      <Stagger in>
                         {leaders}
-                    </Media>
+                      </Stagger>
+                   </Media> 
                 </div>
             </div>
         </div>
     );
 }
 
-export default About;    
+export default About;  
