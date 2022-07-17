@@ -19,7 +19,7 @@
     "react-redux": "^8.0.2",
     "react-redux-form": "^1.16.14",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.2",
     "reactstrap": "^9.1.1",
     "redux": "^4.2.0",
@@ -32,7 +32,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json -p 3001"
+    "server":"json-server --watch db.json -p 3001"
   },
   "eslintConfig": {
     "extends": [
@@ -53,11 +53,7 @@
     ]
   },
   "devDependencies": {
-    "json-server": "^0.17.0",
-    "react-animation-components": "^1.0.2"
-  },
-  "engines": {
-    "node": "18.2.0",
-    "npm": "8.5.5"
+    "react-animation-components": "^3.0.0",
+    "node-server":"^1.0.18"
   }
 }
