@@ -53,11 +53,11 @@
     ]
   },
   "devDependencies": {
-    "json-server": "^0.4.0",
+    "json-server": "^0.17.0",
     "react-animation-components": "^1.0.2"
   },
   "engines": {
-    "node": "16.0.0",
+    "node": "18.2.0",
     "npm": "8.5.5"
   }
 }
