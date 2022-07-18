@@ -250,13 +250,13 @@
     },
     {
       "id": 1,
-      "name": "Simran Tandon",
-      "image": "images/simran.png",
+      "name": "Animesh Singh",
+      "image": "images/animesh.png",
       "designation": "Chief Food Officer",
       "abbr": "CFO",
       "featured": false,
-      "description": "Our CFO, Simran, as she is affectionately referred to by her colleagues, comes from a long established family tradition in farming and produce. Her experiences growing up on a farm in the Australian outback gave her great appreciation for varieties of food sources. As she puts it in her own words, Everything that runs, wins, and everything that stays, pays!"
-    },
+      "description": "Our CFO,Animesh, as he is affectionately referred to by his colleagues, comes from a long-established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him a great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs wins, and everything that stays, pays!"
+       },
     {
       "id": 2,
       "name": "Avi Goyal",
