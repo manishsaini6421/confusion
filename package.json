@@ -2,7 +2,7 @@
   "name": "confusion",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://manishsaini6421.github.io/",
+  "homepage": "https://manishsaini6421.github.io/confusion/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
