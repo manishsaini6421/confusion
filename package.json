@@ -2,6 +2,7 @@
   "name": "confusion",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://manishsaini6421.github.io/confusion/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -30,11 +31,13 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json -p 3001",
-    "heroku_postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client" 
+    "server": "npx json-server --watch db.json -p 3001"
+    
   },
   "eslintConfig": {
     "extends": [
