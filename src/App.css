@@ -63,3 +63,7 @@ address{
 .photo-size{
     max-width: 150px;
 }
+.login-button{
+    float: right;
+}
+

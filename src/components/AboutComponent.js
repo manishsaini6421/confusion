@@ -1,7 +1,6 @@
 import React from 'react';
 import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { baseUrl } from '../shared/baseUrl';
 import { Fade, Stagger } from 'react-animation-components';
 
 function RenderLeader({leader}) {
@@ -10,7 +9,7 @@ function RenderLeader({leader}) {
          <div key={leader.id} className="col-12 mt-5">
             <Media tag="ul" className="row">
                <Media left className="col-12 col-md-2">
-                  <Media object src={baseUrl + leader.image} alt={leader.name} className="photo-size"/>
+                  <Media object src={leader.image} alt={leader.name} className="photo-size"/>
                </Media>
                <Media body className="col-12 col-md-10">
                   <Media heading>{leader.name}</Media>
@@ -25,7 +24,7 @@ function RenderLeader({leader}) {
 
 function About(props) {
 
-    const leaders = props.leaders.leaders.map((leader) => {
+    const leaders = props.leaders.map((leader) => {
         return (
             <RenderLeader leader={leader} />
         );
