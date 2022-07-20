@@ -73,9 +73,9 @@ class Main extends Component {
         <TransitionGroup>
             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
               <Switch location={this.props.location}>
-                  <Route path='/home' component={HomePage} />
-                  <Route exact path='/aboutus' component={() => <About leaders={this.props.leaders} />} />
-                  <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
+                  <Route exact path='/confusion' component={HomePage} />
+                  <Route path='/aboutus' component={() => <About leaders={this.props.leaders} />} />
+                  <Route path='/menu' component={() => <Menu dishes={this.props.dishes} />} />
                   <Route path='/menu/:dishId' component={DishWithId} />
                   <Route exact path='/contactus' component={() => <Contact postFeedback={this.props.postFeedback} resetFeedbackForm={this.props.resetFeedbackForm} />} />
                   <Redirect to="/home" />
