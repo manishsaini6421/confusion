@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 import { FadeTransform, Fade, Stagger } from 'react-animation-components';
-
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => (val) && (val.length >= len);
@@ -101,7 +100,7 @@ export class CommentForm extends Component {
                 }}>
                     
             <Card>
-                <CardImg top src={dish.image} alt={dish.name} />
+                <CardImg top src={`${process.env.PUBLIC_URL}/assets/images/`+`${dish.name.toLowerCase()}.png`} alt={dish.name} />
                 <CardBody>
                     <CardTitle>{dish.name}</CardTitle>
                     <CardText>{dish.description}</CardText>
