@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/confusion">
         <div>
           <Main />
         </div>
