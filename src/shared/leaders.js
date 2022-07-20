@@ -2,7 +2,7 @@ export const LEADERS = [
   {
     "id": 0,
     "name": "Nitesh Meena",
-    "image": "confusion/assets/images/nitesh.png",
+    "image": "assets/images/nitesh.png",
     "designation": "Chief Epicurious Officer",
     "abbr": "CEO",
     "featured": false,
@@ -11,7 +11,7 @@ export const LEADERS = [
   {
     "id": 1,
     "name": "Animesh Singh",
-    "image": "confusion/assets/images/animesh.png",
+    "image": "assets/images/animesh.png",
     "designation": "Chief Food Officer",
     "abbr": "CFO",
     "featured": false,
@@ -20,7 +20,7 @@ export const LEADERS = [
   {
     "id": 2,
     "name": "Avi Goyal",
-    "image": "confusion/assets/images/avi.png",
+    "image": "assets/images/avi.png",
     "designation": "Chief Taste Officer",
     "abbr": "CTO",
     "featured": false,
@@ -29,7 +29,7 @@ export const LEADERS = [
   {
     "id": 3,
     "name": "Manish Kumar",
-    "image": "confusion/assets/images/manish.png",
+    "image": "assets/images/manish.png",
     "designation": "Executive Chef",
     "abbr": "EC",
     "featured": true,
