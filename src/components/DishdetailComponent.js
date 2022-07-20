@@ -100,7 +100,7 @@ export class CommentForm extends Component {
                 }}>
                     
             <Card>
-                <CardImg top src={`/assets/images/`+`${dish.name.toLowerCase()}.png`} alt={dish.name} />
+                <CardImg top src={'https://manishsaini6421.github.io/confusion/assets/images/'+`${dish.name.toLowerCase()}.png`} alt={dish.name} />
                 <CardBody>
                     <CardTitle>{dish.name}</CardTitle>
                     <CardText>{dish.description}</CardText>
