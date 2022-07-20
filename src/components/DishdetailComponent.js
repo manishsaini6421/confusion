@@ -99,6 +99,7 @@ export class CommentForm extends Component {
                 transformProps={{
                     exitTransform: 'scale(0.5) translateY(-50%)'
                 }}>
+                    
             <Card>
                 <CardImg top src={dish.image} alt={dish.name} />
                 <CardBody>
