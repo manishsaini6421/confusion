@@ -1,9 +1,9 @@
 import "./App.css";
 import Main from "./components/MainComponent";
 import React, { Component } from "react";
-import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { ConfigureStore } from "./redux/configureStore";
+import { BrowserRouter } from "react-router-dom";
 
 
 const store =ConfigureStore();
@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename="/confusion">
         <div>
           <Main />
         </div>
