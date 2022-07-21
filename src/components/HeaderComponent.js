@@ -42,7 +42,7 @@ class Header extends Component {
     return (
       <>
 
-        <Navbar dark expand="md" className="container-fluid">
+        <Navbar dark expand="md" className="container-fluid" fixed="top">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
             
