@@ -41,9 +41,13 @@ class Header extends Component {
   render() {
     return (
       <>
-        <Navbar dark expand="md" fixed="top">
+
+        <Navbar dark expand="md" className="container-fluid">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
+            
+            
+            <Collapse isOpen={this.state.isNavOpen} navbar className="co-style">
             <NavbarBrand className="mr-auto style">
               <img
                 src= 'https://manishsaini6421.github.io/confusion/assets/images/logo.png'
@@ -52,10 +56,9 @@ class Header extends Component {
                 alt="Ristorante Con Fusion"
               />
             </NavbarBrand>
-            <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav navbar className="style">
-                <NavItem>
-                  <NavLink className="nav-link" to="/home">
+              <Nav navbar>
+                <NavItem >
+                  <NavLink className="nav-link" to="/home" >
                     <span className="fa fa-home fa-lg"></span> Home
                   </NavLink>
                 </NavItem>
@@ -77,7 +80,7 @@ class Header extends Component {
                 </NavItem>
               </Nav>
               <Nav className="ms-auto" navbar>
-                <NavItem className="ml-auto">
+                <NavItem className="ml-auto ">
                   <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
                 </NavItem>
               </Nav>

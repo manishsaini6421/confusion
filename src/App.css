@@ -54,12 +54,6 @@ address{
     transform: translateX(100%);
     transition: all 300ms ease-out;
 }
-
-.style{
-   float: left;
-    
-}
-
 .photo-size{
     max-width: 150px;
 }
@@ -69,4 +63,12 @@ address{
 
 .submit-button{
     float: right;
+}
+
+.login-button-nav{
+    display: block;
+}
+
+.navbar-toggler{
+    display: block;
 }
